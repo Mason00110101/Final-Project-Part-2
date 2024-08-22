@@ -1,0 +1,217 @@
+/* Global Styles */
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #fff3b0;
+  color: #2c3e50;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  background-color: #335c67;
+  color: white;
+  padding: 20px 0;
+  position: relative;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  max-width: 120px;
+  margin-right: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.name-title h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #fff3b0;
+}
+
+.name-title p {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #e09f3e;
+}
+
+/* Positioning the Navigation */
+nav {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #9e2a2b;
+}
+
+/* Introduction Section */
+.introduction {
+  background-image: url("background image 1.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  text-align: center;
+  color: black;
+}
+
+.introduction h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.introduction p {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+/* Expertise Section */
+.expertise {
+  background-color: #fff3b0;
+  padding: 40px 20px;
+}
+
+.expertise h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #335c67;
+  margin-bottom: 20px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.skills-grid span {
+  background-color: #e09f3e;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.skills-grid span:hover {
+  background-color: #9e2a2b;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #540b0e;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer p {
+  margin: 0 0 10px 0;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 0 0;
+}
+
+.social-links li {
+  margin: 0 10px;
+}
+
+.social-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-links li a:hover {
+  color: #e09f3e;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-pic {
+    max-width: 100px;
+  }
+
+  nav {
+    position: static;
+    transform: none;
+    margin-top: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .introduction h2 {
+    font-size: 2rem;
+  }
+
+  .introduction p {
+    font-size: 1rem;
+  }
+}
